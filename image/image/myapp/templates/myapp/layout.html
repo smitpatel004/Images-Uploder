@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<!--{% load static tailwind_tags %}-->
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        default
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+<!--    	{% tailwind_css %}-->
+</head>
+<body>
+<nav>this our nav</nav>
+{{form}}
+{% block content %}{% endblock %}
+
+</body>
+</html>
